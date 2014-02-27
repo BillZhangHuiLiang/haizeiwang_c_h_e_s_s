@@ -13,7 +13,6 @@
 		A9AD169F1899F20F005E15FF /* WithPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AD169D1899F20F005E15FF /* WithPlayerViewController.m */; };
 		A9AD16A01899F20F005E15FF /* WithPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9AD169E1899F20F005E15FF /* WithPlayerViewController.xib */; };
 		A9AD16A31899F3D7005E15FF /* PlayerNS.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AD16A21899F3D7005E15FF /* PlayerNS.m */; };
-		A9AD16A7189A1546005E15FF /* AllChessman.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AD16A6189A1546005E15FF /* AllChessman.m */; };
 		A9AD16AA189A1D97005E15FF /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AD16A9189A1D97005E15FF /* Functions.m */; };
 		A9C2875D18910ADE0097E880 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C2875C18910ADE0097E880 /* Foundation.framework */; };
 		A9C2875F18910ADE0097E880 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C2875E18910ADE0097E880 /* CoreGraphics.framework */; };
@@ -51,8 +50,6 @@
 		A9AD169E1899F20F005E15FF /* WithPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithPlayerViewController.xib; sourceTree = "<group>"; };
 		A9AD16A11899F3D7005E15FF /* PlayerNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerNS.h; sourceTree = "<group>"; };
 		A9AD16A21899F3D7005E15FF /* PlayerNS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerNS.m; sourceTree = "<group>"; };
-		A9AD16A5189A1546005E15FF /* AllChessman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllChessman.h; sourceTree = "<group>"; };
-		A9AD16A6189A1546005E15FF /* AllChessman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllChessman.m; sourceTree = "<group>"; };
 		A9AD16A8189A1D97005E15FF /* Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
 		A9AD16A9189A1D97005E15FF /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Functions.m; sourceTree = "<group>"; };
 		A9C2875918910ADE0097E880 /* Gomoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gomoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,8 +121,6 @@
 			children = (
 				A9AD16A11899F3D7005E15FF /* PlayerNS.h */,
 				A9AD16A21899F3D7005E15FF /* PlayerNS.m */,
-				A9AD16A5189A1546005E15FF /* AllChessman.h */,
-				A9AD16A6189A1546005E15FF /* AllChessman.m */,
 				A9AD16A8189A1D97005E15FF /* Functions.h */,
 				A9AD16A9189A1D97005E15FF /* Functions.m */,
 			);
@@ -317,7 +312,6 @@
 				A9AD169F1899F20F005E15FF /* WithPlayerViewController.m in Sources */,
 				A9C2876918910ADE0097E880 /* main.m in Sources */,
 				A9AD16A31899F3D7005E15FF /* PlayerNS.m in Sources */,
-				A9AD16A7189A1546005E15FF /* AllChessman.m in Sources */,
 				A9AD16AA189A1D97005E15FF /* Functions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
