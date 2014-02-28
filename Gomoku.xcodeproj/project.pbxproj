@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11A1E57218C0514B0014C831 /* HollowSquareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A1E57118C0514B0014C831 /* HollowSquareView.m */; };
 		A920A0F518975CD2003C0E69 /* ChessBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = A920A0F418975CD2003C0E69 /* ChessBoard.m */; };
 		A991964F189792FC00CDCB47 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = A991964D189792FC00CDCB47 /* black.png */; };
 		A9919650189792FC00CDCB47 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = A991964E189792FC00CDCB47 /* white.png */; };
@@ -41,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11A1E57018C0514B0014C831 /* HollowSquareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HollowSquareView.h; sourceTree = "<group>"; };
+		11A1E57118C0514B0014C831 /* HollowSquareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HollowSquareView.m; sourceTree = "<group>"; };
+		11A1E57318C052940014C831 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		A920A0F318975CD2003C0E69 /* ChessBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChessBoard.h; sourceTree = "<group>"; };
 		A920A0F418975CD2003C0E69 /* ChessBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChessBoard.m; sourceTree = "<group>"; };
 		A991964D189792FC00CDCB47 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
@@ -97,22 +101,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11A1E57418C06E2F0014C831 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				11A1E57518C06E420014C831 /* 第一层 */,
+				11A1E57618C06E5E0014C831 /* 第二层 */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		11A1E57518C06E420014C831 /* 第一层 */ = {
+			isa = PBXGroup;
+			children = (
+				A9C2877118910ADE0097E880 /* ViewController.h */,
+				A9C2877218910ADE0097E880 /* ViewController.m */,
+				A9C2876E18910ADE0097E880 /* Main.storyboard */,
+			);
+			name = "第一层";
+			sourceTree = "<group>";
+		};
+		11A1E57618C06E5E0014C831 /* 第二层 */ = {
+			isa = PBXGroup;
+			children = (
+				A9AD169C1899F20F005E15FF /* WithPlayerViewController.h */,
+				A9AD169D1899F20F005E15FF /* WithPlayerViewController.m */,
+				A9AD169E1899F20F005E15FF /* WithPlayerViewController.xib */,
+			);
+			name = "第二层";
+			sourceTree = "<group>";
+		};
 		A920A0F6189772A1003C0E69 /* V */ = {
 			isa = PBXGroup;
 			children = (
 				A920A0F318975CD2003C0E69 /* ChessBoard.h */,
 				A920A0F418975CD2003C0E69 /* ChessBoard.m */,
+				11A1E57018C0514B0014C831 /* HollowSquareView.h */,
+				11A1E57118C0514B0014C831 /* HollowSquareView.m */,
 			);
 			name = V;
 			sourceTree = "<group>";
 		};
-		A991964C189792D300CDCB47 /* Material */ = {
+		A991964C189792D300CDCB47 /* 图片 */ = {
 			isa = PBXGroup;
 			children = (
 				A991964D189792FC00CDCB47 /* black.png */,
 				A991964E189792FC00CDCB47 /* white.png */,
 			);
-			name = Material;
+			name = "图片";
 			path = Gomoku;
 			sourceTree = "<group>";
 		};
@@ -123,6 +158,7 @@
 				A9AD16A21899F3D7005E15FF /* PlayerNS.m */,
 				A9AD16A8189A1D97005E15FF /* Functions.h */,
 				A9AD16A9189A1D97005E15FF /* Functions.m */,
+				11A1E57318C052940014C831 /* Constant.h */,
 			);
 			name = M;
 			sourceTree = "<group>";
@@ -130,8 +166,8 @@
 		A9C2875018910ADE0097E880 = {
 			isa = PBXGroup;
 			children = (
-				A991964C189792D300CDCB47 /* Material */,
 				A9C2876218910ADE0097E880 /* Gomoku */,
+				A991964C189792D300CDCB47 /* 图片 */,
 				A9C2878118910ADE0097E880 /* GomokuTests */,
 				A9C2875B18910ADE0097E880 /* Frameworks */,
 				A9C2875A18910ADE0097E880 /* Products */,
@@ -163,14 +199,9 @@
 			children = (
 				A9C2876B18910ADE0097E880 /* AppDelegate.h */,
 				A9C2876C18910ADE0097E880 /* AppDelegate.m */,
-				A9C2876E18910ADE0097E880 /* Main.storyboard */,
-				A9C2877118910ADE0097E880 /* ViewController.h */,
-				A9C2877218910ADE0097E880 /* ViewController.m */,
-				A9AD169C1899F20F005E15FF /* WithPlayerViewController.h */,
-				A9AD169D1899F20F005E15FF /* WithPlayerViewController.m */,
-				A9AD169E1899F20F005E15FF /* WithPlayerViewController.xib */,
 				A9AD16A41899F3E1005E15FF /* M */,
 				A920A0F6189772A1003C0E69 /* V */,
+				11A1E57418C06E2F0014C831 /* C */,
 				A9C2877418910ADE0097E880 /* Images.xcassets */,
 				A9C2876318910ADE0097E880 /* Supporting Files */,
 			);
@@ -312,6 +343,7 @@
 				A9AD169F1899F20F005E15FF /* WithPlayerViewController.m in Sources */,
 				A9C2876918910ADE0097E880 /* main.m in Sources */,
 				A9AD16A31899F3D7005E15FF /* PlayerNS.m in Sources */,
+				11A1E57218C0514B0014C831 /* HollowSquareView.m in Sources */,
 				A9AD16AA189A1D97005E15FF /* Functions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
