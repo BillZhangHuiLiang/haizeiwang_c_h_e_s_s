@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		11A1E57218C0514B0014C831 /* HollowSquareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A1E57118C0514B0014C831 /* HollowSquareView.m */; };
+		11C431C918C40DB000CF9E54 /* 五子棋棋盘背景.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11C431C818C40DB000CF9E54 /* 五子棋棋盘背景.jpg */; };
+		11DB526318C7482B00D84555 /* PlayerNSList.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DB526218C7482B00D84555 /* PlayerNSList.m */; };
+		11DB526618C7483E00D84555 /* PlayerNSDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DB526518C7483E00D84555 /* PlayerNSDB.m */; };
 		A920A0F518975CD2003C0E69 /* ChessBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = A920A0F418975CD2003C0E69 /* ChessBoard.m */; };
 		A991964F189792FC00CDCB47 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = A991964D189792FC00CDCB47 /* black.png */; };
 		A9919650189792FC00CDCB47 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = A991964E189792FC00CDCB47 /* white.png */; };
@@ -45,6 +48,11 @@
 		11A1E57018C0514B0014C831 /* HollowSquareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HollowSquareView.h; sourceTree = "<group>"; };
 		11A1E57118C0514B0014C831 /* HollowSquareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HollowSquareView.m; sourceTree = "<group>"; };
 		11A1E57318C052940014C831 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		11C431C818C40DB000CF9E54 /* 五子棋棋盘背景.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "五子棋棋盘背景.jpg"; sourceTree = "<group>"; };
+		11DB526118C7482B00D84555 /* PlayerNSList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerNSList.h; sourceTree = "<group>"; };
+		11DB526218C7482B00D84555 /* PlayerNSList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerNSList.m; sourceTree = "<group>"; };
+		11DB526418C7483E00D84555 /* PlayerNSDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerNSDB.h; sourceTree = "<group>"; };
+		11DB526518C7483E00D84555 /* PlayerNSDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerNSDB.m; sourceTree = "<group>"; };
 		A920A0F318975CD2003C0E69 /* ChessBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChessBoard.h; sourceTree = "<group>"; };
 		A920A0F418975CD2003C0E69 /* ChessBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChessBoard.m; sourceTree = "<group>"; };
 		A991964D189792FC00CDCB47 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
@@ -101,13 +109,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11A1E57418C06E2F0014C831 /* C */ = {
+		11A1E57418C06E2F0014C831 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				11A1E57518C06E420014C831 /* 第一层 */,
 				11A1E57618C06E5E0014C831 /* 第二层 */,
 			);
-			name = C;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		11A1E57518C06E420014C831 /* 第一层 */ = {
@@ -130,7 +138,20 @@
 			name = "第二层";
 			sourceTree = "<group>";
 		};
-		A920A0F6189772A1003C0E69 /* V */ = {
+		11DB526718C7484C00D84555 /* 数据三层架构 */ = {
+			isa = PBXGroup;
+			children = (
+				A9AD16A11899F3D7005E15FF /* PlayerNS.h */,
+				A9AD16A21899F3D7005E15FF /* PlayerNS.m */,
+				11DB526118C7482B00D84555 /* PlayerNSList.h */,
+				11DB526218C7482B00D84555 /* PlayerNSList.m */,
+				11DB526418C7483E00D84555 /* PlayerNSDB.h */,
+				11DB526518C7483E00D84555 /* PlayerNSDB.m */,
+			);
+			name = "数据三层架构";
+			sourceTree = "<group>";
+		};
+		A920A0F6189772A1003C0E69 /* 视图 */ = {
 			isa = PBXGroup;
 			children = (
 				A920A0F318975CD2003C0E69 /* ChessBoard.h */,
@@ -138,7 +159,7 @@
 				11A1E57018C0514B0014C831 /* HollowSquareView.h */,
 				11A1E57118C0514B0014C831 /* HollowSquareView.m */,
 			);
-			name = V;
+			name = "视图";
 			sourceTree = "<group>";
 		};
 		A991964C189792D300CDCB47 /* 图片 */ = {
@@ -151,21 +172,21 @@
 			path = Gomoku;
 			sourceTree = "<group>";
 		};
-		A9AD16A41899F3E1005E15FF /* M */ = {
+		A9AD16A41899F3E1005E15FF /* 数据模型 */ = {
 			isa = PBXGroup;
 			children = (
-				A9AD16A11899F3D7005E15FF /* PlayerNS.h */,
-				A9AD16A21899F3D7005E15FF /* PlayerNS.m */,
+				11DB526718C7484C00D84555 /* 数据三层架构 */,
 				A9AD16A8189A1D97005E15FF /* Functions.h */,
 				A9AD16A9189A1D97005E15FF /* Functions.m */,
 				11A1E57318C052940014C831 /* Constant.h */,
 			);
-			name = M;
+			name = "数据模型";
 			sourceTree = "<group>";
 		};
 		A9C2875018910ADE0097E880 = {
 			isa = PBXGroup;
 			children = (
+				11C431C818C40DB000CF9E54 /* 五子棋棋盘背景.jpg */,
 				A9C2876218910ADE0097E880 /* Gomoku */,
 				A991964C189792D300CDCB47 /* 图片 */,
 				A9C2878118910ADE0097E880 /* GomokuTests */,
@@ -199,9 +220,9 @@
 			children = (
 				A9C2876B18910ADE0097E880 /* AppDelegate.h */,
 				A9C2876C18910ADE0097E880 /* AppDelegate.m */,
-				A9AD16A41899F3E1005E15FF /* M */,
-				A920A0F6189772A1003C0E69 /* V */,
-				11A1E57418C06E2F0014C831 /* C */,
+				A9AD16A41899F3E1005E15FF /* 数据模型 */,
+				A920A0F6189772A1003C0E69 /* 视图 */,
+				11A1E57418C06E2F0014C831 /* Controller */,
 				A9C2877418910ADE0097E880 /* Images.xcassets */,
 				A9C2876318910ADE0097E880 /* Supporting Files */,
 			);
@@ -313,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C431C918C40DB000CF9E54 /* 五子棋棋盘背景.jpg in Resources */,
 				A9919650189792FC00CDCB47 /* white.png in Resources */,
 				A9C2877518910ADE0097E880 /* Images.xcassets in Resources */,
 				A991964F189792FC00CDCB47 /* black.png in Resources */,
@@ -344,7 +366,9 @@
 				A9C2876918910ADE0097E880 /* main.m in Sources */,
 				A9AD16A31899F3D7005E15FF /* PlayerNS.m in Sources */,
 				11A1E57218C0514B0014C831 /* HollowSquareView.m in Sources */,
+				11DB526618C7483E00D84555 /* PlayerNSDB.m in Sources */,
 				A9AD16AA189A1D97005E15FF /* Functions.m in Sources */,
+				11DB526318C7482B00D84555 /* PlayerNSList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

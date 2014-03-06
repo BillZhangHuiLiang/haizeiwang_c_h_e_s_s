@@ -5,13 +5,15 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>D687140D-FD88-4AF8-B801-4BFF4E133C50</string>
+	<string>4E2F6171-45D4-46C8-9AE0-449AD6ABB603</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Gomoku</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0FE6CBA7-D81B-40C4-9319-7D5801CCCA65</key>
 		<string>https://github.com/BillZhangHuiLiang/haizeiwang_c_h_e_s_s.git</string>
+		<key>CF3BE8A3-A5E7-47F6-A9EE-B10269933E28</key>
+		<string>https://github.com/BillZhangHuiLiang/Gomoku.xcodeproj.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Gomoku.xcodeproj/project.xcworkspace</string>
@@ -19,11 +21,11 @@
 	<dict>
 		<key>0FE6CBA7-D81B-40C4-9319-7D5801CCCA65</key>
 		<string>../..</string>
-		<key>74961391-30E9-46BC-939E-C4E64F2E2579</key>
-		<string>../../Gomoku</string>
+		<key>CF3BE8A3-A5E7-47F6-A9EE-B10269933E28</key>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/BillZhangHuiLiang/haizeiwang_c_h_e_s_s.git</string>
+	<string>https://github.com/BillZhangHuiLiang/Gomoku.xcodeproj.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +36,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>74961391-30E9-46BC-939E-C4E64F2E2579</string>
+			<string>CF3BE8A3-A5E7-47F6-A9EE-B10269933E28</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Gomoku</string>
 		</dict>
